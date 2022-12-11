@@ -1,8 +1,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  # name: pre-sync-job
-  generateName: pre-sync-job-
+  name: pre-sync-job
   annotations:
     argocd.argoproj.io/hook: PreSync
     # argocd.argoproj.io/hook-delete-policy: HookSucceeded

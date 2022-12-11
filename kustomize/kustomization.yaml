@@ -7,3 +7,5 @@ resources:
   - secret.yaml
   - post-sync.yaml
   - pre-sync.yaml
+  - sync-fail.yaml
+  - sync.yaml

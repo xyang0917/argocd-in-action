@@ -10,7 +10,15 @@ spec:
   template:
     spec:
       containers:
-      - name: syncing
-        image: alpine:latest
-        command: ["echo",  "资源同步中"]
+      - name: wxwork-notification
+        image: curlimages/curl
+        command:
+          - "curl"
+          - "--request"
+          - "POST"
+          - "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=0183dd7f-4e48-4c91-9598-88c18fcd9e12"
+          - "--header"
+          - "'Content-Type: application/json'"
+          - "--data-raw"
+          - "{\"msgtype\": \"text\",\"text\": {\"content\": \"资源同步中...\"}}"
       restartPolicy: Never

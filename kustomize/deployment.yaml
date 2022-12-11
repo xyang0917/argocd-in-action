@@ -19,7 +19,7 @@ spec:
         version: v1
     spec:
       containers:
-        - name: flask-demo
+        - name: flask-demo2
           image: 364950776/flask-demo
           ports:
             - name: http-5000

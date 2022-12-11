@@ -4,9 +4,9 @@ metadata:
   name: sync-job
   annotations:
     argocd.argoproj.io/hook: Sync
-    argocd.argoproj.io/hook-delete-policy: HookFailed
+    # argocd.argoproj.io/hook-delete-policy: HookFailed
 spec:
-  ttlSecondsAfterFinished: 100
+  # ttlSecondsAfterFinished: 100
   template:
     spec:
       containers:

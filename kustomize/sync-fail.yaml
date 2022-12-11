@@ -4,7 +4,7 @@ metadata:
   name: sync-fail-job
   annotations:
     argocd.argoproj.io/hook: SyncFail
-    # argocd.argoproj.io/hook-delete-policy: BeforeHookCreation
+    argocd.argoproj.io/hook-delete-policy: HookSucceeded
 spec:
   # ttlSecondsAfterFinished: 100
   template:

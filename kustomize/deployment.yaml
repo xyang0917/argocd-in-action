@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: flask-demo2
-          image: 364950776/flask-demo:0.0.1
+          image: 364950776/flask-demo
           ports:
             - name: http-5000
               containerPort: 5000
